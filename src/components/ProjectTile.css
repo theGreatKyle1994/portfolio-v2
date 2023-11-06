@@ -10,9 +10,8 @@
 
 .tileTitle {
   font-size: 2em;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #588157;
-  margin: 20px 0 0 0;
+  border-bottom: 2px solid #588157;
+  margin: 40px 0 20px 0;
 }
 
 .tileTitleTags {

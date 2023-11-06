@@ -1,15 +1,15 @@
 .skillContainer {
-  width: 100%;
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  padding: 0;
+  margin: 0;
 }
 
 .skillContainer:not(:last-child) {
-  border-bottom: 2px solid #588157;
+  border-bottom: 1px solid #588157;
 }
 
 @media (max-width: 1000px) {
