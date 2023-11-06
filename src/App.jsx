@@ -1,6 +1,7 @@
 import "./App.css";
 import svgIcons from "./UI/SvgIcons";
 import Header from "./components/Header";
+import Summary from "./components/Summary";
 import AboutMe from "./components/AboutMe";
 import Work from "./components/Work";
 import HardSkills from "./components/HardSkills";
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <main className={"mainBody"}>
       <Header />
+      <Summary />
       <AboutMe />
       <Work />
       <HardSkills icons={svgIcons} />

@@ -13,7 +13,7 @@ const Projects = () => {
     <Card title={"Projects"}>
       <div className={"projectContainer"}>
         <ProjectTile
-          title={"Project-Alpha | Open Source"}
+          title={"Project-Alpha"}
           url={"https://github.com/theGreatKyle1994/project-alpha/tree/dev"}
           imgUrl={projectAlpha}
         />

@@ -1,0 +1,9 @@
+.summary-container {
+  width: 75%;
+}
+
+.summary {
+  font-size: 2.25em;
+  text-align: center;
+  font-style: italic;
+}
