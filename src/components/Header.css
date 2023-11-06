@@ -1,0 +1,70 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 350px;
+  user-select: none;
+  padding: 0 50px;
+}
+
+.contentContainerMain,
+.contentContainerCode {
+  font-size: 3em;
+}
+
+.contentContainerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #588157;
+}
+
+.mainTitle,
+.subTitle {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.funcTitle {
+  color: #5555ff;
+}
+
+.funcNameBracket {
+  color: #ffbf70;
+}
+
+.return {
+  color: #be00be;
+  margin-left: 100px;
+}
+
+.JSXTags {
+  color: #919191;
+}
+
+.JSXName {
+  color: #00d400;
+}
+
+.semiColon {
+  color: #e2e2e2;
+}
+
+@media (max-width: 1650px) {
+  .headerContainer {
+    height: auto;
+    padding: 20px 0 0 0;
+    justify-content: center;
+  }
+  .subTitle, .mainTitle {
+    padding: 10px 0;
+  }
+  .subTitle{
+    font-size: 0.8em;
+  }
+  .contentContainerCode {
+    display: none;
+  }
+}

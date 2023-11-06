@@ -1,0 +1,31 @@
+.skillBox {
+  width: 125px;
+  height: 125px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconBox {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  fill: black;
+  transition-property: fill;
+  transition-duration: 0.3s;
+}
+
+.iconBox:hover,
+.iconBox:active {
+  fill: white;
+}
+
+.skillList {
+  list-style: none;
+  font-size: 1.5em;
+}

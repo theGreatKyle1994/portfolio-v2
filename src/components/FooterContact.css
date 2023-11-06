@@ -1,0 +1,35 @@
+.footerListItem {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.linkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.linkContainer:hover,
+.linkContainer:active {
+  fill: white;
+  cursor: pointer;
+  color: #588157;
+}
+
+.linkText {
+  padding-right: 10px;
+  color: #dad7cd;
+}
+
+.linkText:visited {
+  color: #dad7cd;
+}
+
+.linkIcon {
+  transition-property: fill;
+  transition-duration: 0.3s;
+}

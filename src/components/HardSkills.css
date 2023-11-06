@@ -1,0 +1,15 @@
+.skillContainer {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+@media (max-width: 1000px) {
+  .skillContainer {
+    width: 95%;
+  }
+}

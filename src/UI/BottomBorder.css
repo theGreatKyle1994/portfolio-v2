@@ -1,0 +1,4 @@
+.bottomBorder {
+  border-bottom: 10px solid;
+  border-image: linear-gradient(to right, #588157, #344e41) 1;
+}
