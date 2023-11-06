@@ -26,16 +26,12 @@
   border-radius: 15px;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  filter: drop-shadow(3px 3px 1px #344e41) grayscale(0.8) opacity(0.75);
-  transition-property: transform filter;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
 .tileImage:hover,
 .tileImage:active {
   transform: scale(1.05);
-  filter: drop-shadow(15px 15px 4px #344e41) grayscale(0) opacity(1);
   cursor: pointer;
 }
 
@@ -43,6 +39,11 @@
   .tileImage {
     height: 300px;
     width: 300px;
+    transition: none;
+  }
+  .tileImage:hover,
+  .tileImage:active {
+    transform: scale(1);
   }
 }
 
