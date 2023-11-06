@@ -14,7 +14,7 @@ const Header = () => {
           <p>
             <span className={"return"}>return </span>
             <span className={"JSXTags"}>{`<`}</span>
-            <span className={"JSXName"}>Front-End Web Developer </span>
+            <span className={"JSXName"}>Full-Stack Engineer </span>
             <span className={"JSXTags"}>{`/>`}</span>
             <span className={"semiColon"}>{` ;`}</span>
           </p>
@@ -22,7 +22,7 @@ const Header = () => {
         </section>
         <section className={"contentContainerMain"}>
           <p className={"mainTitle"}>Kyle Rohr-Morey</p>
-          <p className={"subTitle"}>Front-End Web Developer</p>
+          <p className={"subTitle"}>Full-Stack Engineer</p>
         </section>
       </header>
     </Card>

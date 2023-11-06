@@ -1,4 +1,7 @@
 import "./Projects.css";
+import projectAlphaGif from "../images/projectAlphaGif.gif";
+import colorMasterImg from "../images/colorMaster.jpg";
+import cryptoniaImg from "../images/cryptonia.jpg";
 import atRecipesImg from "../images/atRecipes.jpg";
 import colorSchemeImg from "../images/colorGenerator.jpg";
 import dadJokeGenImg from "../images/dadJokeGen.jpg";
@@ -8,7 +11,22 @@ import ProjectTile from "./ProjectTile";
 const Projects = () => {
   return (
     <Card title={"Projects"}>
-      <ul className={"projectContainer"}>
+      <div className={"projectContainer"}>
+        <ProjectTile
+          title={"Project-Alpha | Open Source"}
+          url={"https://github.com/theGreatKyle1994/project-alpha/tree/dev"}
+          imgUrl={projectAlphaGif}
+        />
+        <ProjectTile
+          title={"Color Master"}
+          url={"http://3.133.98.214/home"}
+          imgUrl={colorMasterImg}
+        />
+        <ProjectTile
+          title={"Cryptonia"}
+          url={"http://3.22.187.148/home"}
+          imgUrl={cryptoniaImg}
+        />
         <ProjectTile
           title={"@Recipes"}
           url={"https://thegreatkyle1994.github.io/react-recipe-app/"}
@@ -24,7 +42,7 @@ const Projects = () => {
           url={"https://thegreatkyle1994.github.io/dad-joke-generator/"}
           imgUrl={dadJokeGenImg}
         />
-      </ul>
+      </div>
     </Card>
   );
 };
