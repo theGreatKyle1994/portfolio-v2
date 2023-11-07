@@ -13,10 +13,7 @@ const ProjectTile = (props) => {
           className={"tileImage"}
           style={{ backgroundImage: `url(${props.imgUrl})` }}
           onMouseOver={(e) => {
-            e.target.style.backgroundImage = `url(${props.imgUrl.slice(
-              0,
-              -4
-            )}Gif.gif)`;
+            e.target.style.backgroundImage = `url(${props.gifUrl})`;
           }}
           onMouseOut={(e) =>
             (e.target.style.backgroundImage = `url(${props.imgUrl})`)

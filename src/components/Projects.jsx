@@ -1,12 +1,18 @@
 import "./Projects.css";
-import projectAlpha from "../images/projectAlpha.jpg";
-import colorMaster from "../images/colorMaster.jpg";
-import cryptonia from "../images/cryptonia.jpg";
-import atRecipes from "../images/atRecipes.jpg";
-import colorScheme from "../images/colorGenerator.jpg";
-import dadJokeGen from "../images/dadJokeGen.jpg";
 import Card from "../UI/Card";
 import ProjectTile from "./ProjectTile";
+import projectAlphaPic from "../assets/images/projectAlpha.jpg";
+import projectAlphaGif from "../assets/images/projectAlphaGif.gif";
+import colorMasterPic from "../assets/images/colorMaster.jpg";
+import colorMasterGif from "../assets/images/colorMasterGif.gif";
+import cryptoniaPic from "../assets/images/cryptonia.jpg";
+import cryptoniaGif from "../assets/images/cryptoniaGif.gif";
+import atRecipesPic from "../assets/images/atRecipes.jpg";
+import atRecipesGif from "../assets/images/atRecipesGif.gif";
+import colorGeneratorPic from "../assets/images/colorGenerator.jpg";
+import colorGeneratorGif from "../assets/images/colorGeneratorGif.gif";
+import dadJokeGenPic from "../assets/images/dadJokeGen.jpg";
+import dadJokeGenGif from "../assets/images/dadJokeGenGif.gif";
 
 const Projects = () => {
   return (
@@ -15,32 +21,38 @@ const Projects = () => {
         <ProjectTile
           title={"Project-Alpha"}
           url={"https://github.com/theGreatKyle1994/project-alpha/tree/dev"}
-          imgUrl={projectAlpha}
+          imgUrl={projectAlphaPic}
+          gifUrl={projectAlphaGif}
         />
         <ProjectTile
           title={"Color Master"}
           url={"http://3.133.98.214/home"}
-          imgUrl={colorMaster}
+          imgUrl={colorMasterPic}
+          gifUrl={colorMasterGif}
         />
         <ProjectTile
           title={"Cryptonia"}
           url={"http://3.22.187.148/home"}
-          imgUrl={cryptonia}
+          imgUrl={cryptoniaPic}
+          gifUrl={cryptoniaGif}
         />
         <ProjectTile
           title={"@Recipes"}
           url={"https://thegreatkyle1994.github.io/react-recipe-app/"}
-          imgUrl={atRecipes}
+          imgUrl={atRecipesPic}
+          gifUrl={atRecipesGif}
         />
         <ProjectTile
           title={"Color Scheme App"}
           url={"https://thegreatkyle1994.github.io/color-scheme-generator/"}
-          imgUrl={colorScheme}
+          imgUrl={colorGeneratorPic}
+          gifUrl={colorGeneratorGif}
         />
         <ProjectTile
           title={"Dad Joke Generator"}
           url={"https://thegreatkyle1994.github.io/dad-joke-generator/"}
-          imgUrl={dadJokeGen}
+          imgUrl={dadJokeGenPic}
+          gifUrl={dadJokeGenGif}
         />
       </div>
     </Card>

@@ -1,5 +1,5 @@
 import "./AboutMe.css";
-import myImage from "../images/me.jpg";
+import myPic from "../assets/images/me.jpg";
 import Card from "../UI/Card";
 
 const AboutMe = () => {
@@ -25,7 +25,7 @@ const AboutMe = () => {
           rel="noreferrer"
           href={"https://www.linkedin.com/in/kyle-rohr-morey/"}
         >
-          <img className={"myImage"} alt={"myself"} src={myImage} />
+          <img className={"myImage"} alt={"myself"} src={myPic} />
         </a>
       </section>
     </Card>
