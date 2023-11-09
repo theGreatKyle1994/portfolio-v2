@@ -17,8 +17,8 @@ const HardSkills = (props) => {
         <HardSkillTile title={"JavaScript"} icon={props.icons.tagJavaScript} />
         <HardSkillTile title={"TypeScript"} icon={props.icons.tagTypeScript} />
         <HardSkillTile title={"JSON"} icon={props.icons.tagJson} />
-        <HardSkillTile title={"C"} icon={props.icons.tagC} />
-        <HardSkillTile title={"C++"} icon={props.icons.tagCPlusPlus} />
+        {/* <HardSkillTile title={"C"} icon={props.icons.tagC} /> */}
+        {/* <HardSkillTile title={"C++"} icon={props.icons.tagCPlusPlus} /> */}
         <HardSkillTile title={"Python"} icon={props.icons.tagPython} />
       </ul>
       <h2 className={"tileTitle"}>
