@@ -6,7 +6,11 @@ const SoftSkills = () => {
     <Card title={"Soft Skills"}>
       <section className={"softSkillContainer"}>
         <div className={"titleContainer"}>
-          <h3 className={"listTitle"}>Personal Skills</h3>
+          <h3 className={"listTitle"}>
+            <span className={"tileTitleTags"}>{`< `}</span>
+            Personal Skills
+            <span className={"tileTitleTags"}>{` />`}</span>
+          </h3>
           <ul className={"listContainer"}>
             <li className={"listItem"}>Strong Communication</li>
             <li className={"listItem"}>Innovative Problem Solving</li>
@@ -20,7 +24,11 @@ const SoftSkills = () => {
         </div>
         <div className={"skillDivider"} />
         <div className={"titleContainer"}>
-          <h3 className={"listTitle"}>Technical Skills</h3>
+          <h3 className={"listTitle"}>
+            <span className={"tileTitleTags"}>{`< `}</span>
+            Technical Skills
+            <span className={"tileTitleTags"}>{` />`}</span>
+          </h3>
           <ul className={"listContainer"}>
             <li className={"listItem"}>Program Debugging</li>
             <li className={"listItem"}>Code Optimization</li>
@@ -29,7 +37,9 @@ const SoftSkills = () => {
             <li className={"listItem"}>Search Engine Optimization (SEO)</li>
             <li className={"listItem"}>Semantic HTML with Accessibility</li>
             <li className={"listItem"}>Responsive Web Design</li>
-            <li className={"listItem"}>Asynchronous JavaScript and XML (AJAX)</li>
+            <li className={"listItem"}>
+              Asynchronous JavaScript and XML (AJAX)
+            </li>
             <li className={"listItem"}>RESTful Web Services</li>
           </ul>
         </div>
