@@ -5,9 +5,10 @@ const Summary = () => {
   return (
     <Card title={"Summary"}>
       <div className="summary-container">
+        <p className="summary">Hello, My name is Kyle...</p>
         <p className="summary">
-          Hello! I'm a Full-Stack Engineer with 4 years of software development
-          and 10 years of client services!
+          I'm a Full-Stack Engineer with 4 years of software development
+          experience and 10 years of client services!
         </p>
       </div>
     </Card>
