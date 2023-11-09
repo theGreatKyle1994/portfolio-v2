@@ -8,7 +8,14 @@ const Work = () => {
         title={"Project Lead"}
         subTitle={"Open-Source"}
         date={"2023-Present"}
-        summary={`blah blah blah`}
+        summary={`Responsible for coordinating complex project assignments for a growing
+        group of developers, utilizing Agile methodologies to ensure project
+        continuation and quality assurance, delegating tasks according to each
+        contributor's unique strengths and skill sets, independently
+        contributing Git commits weekly to facilitate back-end and front-end
+        requirements, collaborating bi-weekly with contributors in one-on-one
+        and group code reviews for mentoring, and publishing thorough
+        documentation for ease of reference.`}
       />
       <WorkTile
         title={"Full-Stack Engineer"}
