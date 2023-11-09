@@ -44,7 +44,7 @@
 .skillDivider {
   align-self: center;
   width: 0px;
-  height: 350px;
+  height: 550px;
   margin: 0 50px;
   border-left: 5px solid;
   border-image: linear-gradient(to top, #588157, #344e41) 1;
