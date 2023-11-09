@@ -25,12 +25,12 @@
 
 .listContainer {
   display: flex;
-  width: 750px;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 0;
   margin: 0;
+  margin-left: 150px;
 }
 
 .listItem {
@@ -66,6 +66,7 @@
   .listContainer {
     width: 500px;
     padding: 0 30px;
+    margin: 0;
   }
   .listItem {
     padding: 0;
@@ -76,7 +77,6 @@
   .listContainer {
     width: 100%;
     padding: 0;
-    align-items: flex-start;
   }
   .listTitle {
     width: 100%;
