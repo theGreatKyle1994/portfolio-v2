@@ -6,7 +6,7 @@ const Footer = (props) => {
     <footer className={"footerContainer"}>
       <ul className={"footerListContainerContact"}>
         <h3 className={"titleList"}>Contact Me</h3>
-        <FooterContact isLink={false} title={"Mobile: (812)-304-9692"} />
+        <FooterContact isLink={false} title={"Mobile: (812)304-9692"} />
         <FooterContact isLink={false} title={"kylemorey1994@gmail.com"} />
       </ul>
       <ul className={"footerListContainerLinks"}>
