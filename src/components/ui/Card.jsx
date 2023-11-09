@@ -1,5 +1,5 @@
-import "../UI/Card.css";
-import "../UI/BottomBorder.css";
+import "./Card.css";
+import "./BottomBorder.css";
 
 const Card = (props) => {
   return (
