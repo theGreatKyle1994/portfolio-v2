@@ -1,6 +1,6 @@
 import "./Header.css";
-import "../UI/BottomBorder.css";
-import Card from "../UI/Card";
+import "../ui/BottomBorder.css";
+import Card from "../ui/Card";
 
 const Header = () => {
   return (

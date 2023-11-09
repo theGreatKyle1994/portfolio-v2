@@ -1,4 +1,4 @@
-import Card from "../UI/Card";
+import Card from "../ui/Card";
 import WorkTile from "./WorkTile";
 
 const Work = () => {

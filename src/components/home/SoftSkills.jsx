@@ -1,5 +1,5 @@
 import "./SoftSkills.css";
-import Card from "../UI/Card";
+import Card from "../ui/Card";
 
 const SoftSkills = () => {
   return (

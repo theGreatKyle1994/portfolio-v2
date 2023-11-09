@@ -1,18 +1,18 @@
 import "./Projects.css";
-import Card from "../UI/Card";
+import Card from "../ui/Card";
 import ProjectTile from "./ProjectTile";
-import projectAlphaPic from "../assets/images/projectAlpha.jpg";
-import projectAlphaGif from "../assets/images/projectAlphaGif.gif";
-import colorMasterPic from "../assets/images/colorMaster.jpg";
-import colorMasterGif from "../assets/images/colorMasterGif.gif";
-import cryptoniaPic from "../assets/images/cryptonia.jpg";
-import cryptoniaGif from "../assets/images/cryptoniaGif.gif";
-import atRecipesPic from "../assets/images/atRecipes.jpg";
-import atRecipesGif from "../assets/images/atRecipesGif.gif";
-import colorGeneratorPic from "../assets/images/colorGenerator.jpg";
-import colorGeneratorGif from "../assets/images/colorGeneratorGif.gif";
-import dadJokeGenPic from "../assets/images/dadJokeGen.jpg";
-import dadJokeGenGif from "../assets/images/dadJokeGenGif.gif";
+import projectAlphaPic from "../../assets/images/projectAlpha.jpg";
+import projectAlphaGif from "../../assets/images/projectAlphaGif.gif";
+import colorMasterPic from "../../assets/images/colorMaster.jpg";
+import colorMasterGif from "../../assets/images/colorMasterGif.gif";
+import cryptoniaPic from "../../assets/images/cryptonia.jpg";
+import cryptoniaGif from "../../assets/images/cryptoniaGif.gif";
+import atRecipesPic from "../../assets/images/atRecipes.jpg";
+import atRecipesGif from "../../assets/images/atRecipesGif.gif";
+import colorGeneratorPic from "../../assets/images/colorGenerator.jpg";
+import colorGeneratorGif from "../../assets/images/colorGeneratorGif.gif";
+import dadJokeGenPic from "../../assets/images/dadJokeGen.jpg";
+import dadJokeGenGif from "../../assets/images/dadJokeGenGif.gif";
 
 const Projects = () => {
   return (

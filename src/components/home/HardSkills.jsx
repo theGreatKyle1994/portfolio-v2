@@ -1,6 +1,6 @@
 import "./HardSkills.css";
-import "../UI/BottomBorder.css";
-import Card from "../UI/Card";
+import "../ui/BottomBorder.css";
+import Card from "../ui/Card";
 import HardSkillTile from "./HardSkillTile";
 
 const HardSkills = (props) => {

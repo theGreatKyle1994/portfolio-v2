@@ -1,6 +1,6 @@
 import "./AboutMe.css";
-import myPic from "../assets/images/me.jpg";
-import Card from "../UI/Card";
+import myPic from "../../assets/images/me.jpg";
+import Card from "../ui/Card";
 
 const AboutMe = () => {
   return (
