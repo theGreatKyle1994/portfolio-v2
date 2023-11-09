@@ -8,10 +8,6 @@ body {
   font-family: "Share Tech", sans-serif;
 }
 
-html {
-  height: 100vh;
-}
-
 body {
   background: linear-gradient(90deg, #344e41, #588157);
   color: #dad7cd;
