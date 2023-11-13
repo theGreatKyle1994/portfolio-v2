@@ -26,12 +26,12 @@ body {
 
 @media (max-width: 2050px) {
   body {
-    font-size: 0.75em;
+    font-size: 0.85em;
   }
 }
 
 @media (max-width: 500px) {
   body {
-    font-size: 0.6em;
+    font-size: 0.75em;
   }
 }
