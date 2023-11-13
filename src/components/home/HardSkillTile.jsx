@@ -1,10 +1,10 @@
 import "./HardSkillTile.css";
 
-const HardSkillTile = (props) => {
+const HardSkillTile = ({ icon, title }) => {
   return (
     <div className={"skillBox"}>
-      <span className={"iconBox"}>{props.icon}</span>
-      <li className={"skillList"}>{props.title}</li>
+      <span className={"iconBox"}>{icon}</span>
+      <li className={"skillList"}>{title}</li>
     </div>
   );
 };

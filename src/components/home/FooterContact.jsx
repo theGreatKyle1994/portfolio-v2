@@ -1,17 +1,17 @@
 import "./FooterContact.css";
 
-const FooterContact = (props) => {
+const FooterContact = ({ isLink, url, title, icons }) => {
   return (
     <li className={"footerListItem"}>
       <a
-        style={{ pointerEvents: props.isLink ? "auto" : "none" }}
+        style={{ pointerEvents: isLink ? "auto" : "none" }}
         className={"linkContainer"}
         target={"_blank"}
         rel={"noreferrer"}
-        href={props.url}
+        href={url}
       >
-        <span className={"linkText"}>{props.title}</span>
-        <span className={"linkIcon"}>{props.icons}</span>
+        <span className={"linkText"}>{title}</span>
+        <span className={"linkIcon"}>{icons}</span>
       </a>
     </li>
   );

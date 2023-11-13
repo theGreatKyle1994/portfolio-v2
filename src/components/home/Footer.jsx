@@ -1,7 +1,7 @@
 import "./Footer.css";
 import FooterContact from "./FooterContact";
 
-const Footer = (props) => {
+const Footer = ({ icons }) => {
   return (
     <footer className={"footerContainer"}>
       <ul className={"footerListContainerContact"}>
@@ -12,13 +12,13 @@ const Footer = (props) => {
       <ul className={"footerListContainerLinks"}>
         <h3 className={"titleList"}>Find Me</h3>
         <FooterContact
-          icons={props.icons.tagLinkedIn}
+          icons={icons.tagLinkedIn}
           isLink={true}
           title={"LinkedIn"}
           url={"https://www.linkedin.com/in/kyle-rohr-morey/"}
         />
         <FooterContact
-          icons={props.icons.tagGitHub}
+          icons={icons.tagGitHub}
           isLink={true}
           title={"GitHub"}
           url={"https://github.com/theGreatKyle1994"}
