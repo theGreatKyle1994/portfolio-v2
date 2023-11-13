@@ -1,18 +1,39 @@
 import "./Card.css";
 import "./BottomBorder.css";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
-const Card = (props) => {
+const Card = ({ title, children, noRender }) => {
   const thisCard = useRef(null);
+  const [isAppeared, setIsAppeared] = useState(false);
+  const [titleTypewriter, setTitleTypewriter] = useState({
+    title: "",
+    index: 0,
+  });
+  const [style, setStyle] = useState("");
+
+  useEffect(() => {
+    if (title && isAppeared) {
+      if (titleTypewriter.index < title.length) {
+        const typewriterInterval = setTimeout(() => {
+          setTitleTypewriter((prevTypewriter) => ({
+            title: prevTypewriter.title + title[prevTypewriter.index],
+            index: prevTypewriter.index + 1,
+          }));
+        }, 100);
+        return () => clearTimeout(typewriterInterval);
+      } else setStyle("card-appear");
+    }
+  }, [isAppeared, titleTypewriter.index]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          console.log(entries[0].target);
+          setIsAppeared(true);
+          observer.unobserve(thisCard.current);
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.05 }
     );
     observer.observe(thisCard.current);
     return () => {
@@ -22,14 +43,16 @@ const Card = (props) => {
 
   return (
     <section className={"cardContainer bottomBorder"} ref={thisCard}>
-      {!props.noRender && (
+      {!noRender && (
         <h2 className={"cardTitle"}>
           <span className={"cardTitleBracket"}>{"{"}</span>
-          {props.title}
+          {titleTypewriter.title}
           <span className={"cardTitleBracket"}>{"}"}</span>
         </h2>
       )}
-      {props.children}
+      <div className={`card-body ${noRender ? "card-static" : style}`}>
+        {children}
+      </div>
     </section>
   );
 };
