@@ -2,7 +2,7 @@ import "./Card.css";
 import "./BottomBorder.css";
 import { useRef, useEffect, useState } from "react";
 
-const Card = ({ title, children, noRender, noBorder = false }) => {
+const Card = ({ title, children, noBorder = false }) => {
   const thisCard = useRef(null);
   const [isAppeared, setIsAppeared] = useState(false);
   const [titleTypewriter, setTitleTypewriter] = useState({
@@ -14,7 +14,7 @@ const Card = ({ title, children, noRender, noBorder = false }) => {
   useEffect(() => {
     if (title && isAppeared) {
       if (titleTypewriter.index < title.length) {
-        let range = Math.floor(Math.random() * (300 - 50) + 50);
+        let range = Math.floor(Math.random() * (250 - 50) + 50);
         const typewriterInterval = setTimeout(() => {
           setTitleTypewriter((prevTypewriter) => ({
             title: prevTypewriter.title + title[prevTypewriter.index],
@@ -44,19 +44,15 @@ const Card = ({ title, children, noRender, noBorder = false }) => {
 
   return (
     <section
-      className={`cardContainer ${!noBorder ? "bottomBorder" : ""}`}
+      className={`cardContainer ${noBorder ? "" : "bottomBorder"}`}
       ref={thisCard}
     >
-      {!noRender && (
-        <h2 className={"cardTitle"}>
-          <span className={"cardTitleBracket"}>{"{"}</span>
-          {titleTypewriter.title}
-          <span className={"cardTitleBracket"}>{"}"}</span>
-        </h2>
-      )}
-      <div className={`card-body ${noRender ? "card-static" : style}`}>
-        {children}
-      </div>
+      <h2 className={"cardTitle"}>
+        <span className={"cardTitleBracket"}>{"{"}</span>
+        {titleTypewriter.title}
+        <span className={"cardTitleBracket"}>{"}"}</span>
+      </h2>
+      <div className={`card-body ${style}`}>{children}</div>
     </section>
   );
 };

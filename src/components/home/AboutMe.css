@@ -8,6 +8,7 @@
 .aboutMe {
   width: 75%;
   font-size: 1.7em;
+  padding: 0 15px;
 }
 
 .myImage {
@@ -31,7 +32,7 @@
     flex-direction: column-reverse;
   }
   .aboutMe {
-    text-align: justify;
+    text-align: center;
     line-height: 25px;
     width: 90%;
   }
