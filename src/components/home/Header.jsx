@@ -1,5 +1,4 @@
 import "./Header.css";
-import "../ui/BottomBorder.css";
 
 const Header = () => {
   return (

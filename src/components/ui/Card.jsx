@@ -1,8 +1,7 @@
 import "./Card.css";
-import "./BottomBorder.css";
 import { useRef, useEffect, useState } from "react";
 
-const Card = ({ title, children, noBorder = false }) => {
+const Card = ({ title, children }) => {
   const thisCard = useRef(null);
   const [isAppeared, setIsAppeared] = useState(false);
   const [titleTypewriter, setTitleTypewriter] = useState({
@@ -27,15 +26,12 @@ const Card = ({ title, children, noBorder = false }) => {
   }, [isAppeared, titleTypewriter.index]);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsAppeared(true);
-          observer.unobserve(thisCard.current);
-        }
-      },
-      { threshold: 0.05 }
-    );
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setIsAppeared(true);
+        observer.unobserve(thisCard.current);
+      }
+    });
     observer.observe(thisCard.current);
     return () => {
       observer.unobserve(thisCard.current);
@@ -43,10 +39,7 @@ const Card = ({ title, children, noBorder = false }) => {
   }, [thisCard.current]);
 
   return (
-    <section
-      className={`cardContainer ${noBorder ? "" : "bottomBorder"}`}
-      ref={thisCard}
-    >
+    <section className={"cardContainer"} ref={thisCard}>
       <h2 className={"cardTitle"}>
         <span className={"cardTitleBracket"}>{"{"}</span>
         {titleTypewriter.title}

@@ -1,5 +1,4 @@
 import "./HardSkills.css";
-import "../ui/BottomBorder.css";
 import Card from "../ui/Card";
 import HardSkillTile from "./HardSkillTile";
 
