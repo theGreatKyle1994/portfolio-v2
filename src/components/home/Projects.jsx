@@ -16,7 +16,7 @@ import dadJokeGenGif from "../../assets/images/dadJokeGenGif.gif";
 
 const Projects = () => {
   return (
-    <Card title={"Projects"}>
+    <Card title={"Projects"} noBorder>
       <div className={"projectContainer"}>
         <ProjectTile
           title={"Project-Alpha"}

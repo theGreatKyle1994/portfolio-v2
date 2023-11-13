@@ -2,7 +2,7 @@ import "./Card.css";
 import "./BottomBorder.css";
 import { useRef, useEffect, useState } from "react";
 
-const Card = ({ title, children, noRender }) => {
+const Card = ({ title, children, noRender, noBorder = false }) => {
   const thisCard = useRef(null);
   const [isAppeared, setIsAppeared] = useState(false);
   const [titleTypewriter, setTitleTypewriter] = useState({
@@ -14,12 +14,13 @@ const Card = ({ title, children, noRender }) => {
   useEffect(() => {
     if (title && isAppeared) {
       if (titleTypewriter.index < title.length) {
+        let range = Math.floor(Math.random() * (300 - 50) + 50);
         const typewriterInterval = setTimeout(() => {
           setTitleTypewriter((prevTypewriter) => ({
             title: prevTypewriter.title + title[prevTypewriter.index],
             index: prevTypewriter.index + 1,
           }));
-        }, 100);
+        }, range);
         return () => clearTimeout(typewriterInterval);
       } else setStyle("card-appear");
     }
@@ -42,7 +43,10 @@ const Card = ({ title, children, noRender }) => {
   }, [thisCard.current]);
 
   return (
-    <section className={"cardContainer bottomBorder"} ref={thisCard}>
+    <section
+      className={`cardContainer ${!noBorder ? "bottomBorder" : ""}`}
+      ref={thisCard}
+    >
       {!noRender && (
         <h2 className={"cardTitle"}>
           <span className={"cardTitleBracket"}>{"{"}</span>

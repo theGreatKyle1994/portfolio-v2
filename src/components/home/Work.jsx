@@ -13,7 +13,7 @@ const Work = () => {
         continuation and quality assurance, delegating tasks according to each
         contributor's unique strengths and skill sets, independently
         contributing Git commits weekly to facilitate back-end and front-end
-        requirements, collaborating bi-weekly with contributors in one-on-one
+        requirements, collaborating with contributors in one-on-one
         and group code reviews for mentoring, and publishing thorough
         documentation for ease of reference.`}
       />
