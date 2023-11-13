@@ -1,22 +1,24 @@
 import "./App.css";
 import svgIcons from "./components/ui/SvgIcons";
-import Home from "./components/Home";
-import ProjectHome from "./components/ProjectHome";
 import Header from "./components/home/Header";
+import Summary from "./components/home/Summary";
+import AboutMe from "./components/home/AboutMe";
+import Work from "./components/home/Work";
+import HardSkills from "./components/home/HardSkills";
+import SoftSkills from "./components/home/SoftSkills";
+import Projects from "./components/home/Projects";
 import Footer from "./components/home/Footer";
-import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <main className={"mainBody"}>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home svgIcons={svgIcons} />} />
-        <Route
-          path="/project/:projectName"
-          element={<ProjectHome icons={svgIcons} />}
-        />
-      </Routes>
+      <Summary />
+      <AboutMe />
+      <Work />
+      <HardSkills icons={svgIcons} />
+      <SoftSkills />
+      <Projects />
       <Footer icons={svgIcons} />
     </main>
   );
