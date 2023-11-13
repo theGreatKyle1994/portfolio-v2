@@ -20,39 +20,49 @@ const Projects = () => {
       <div className={"projectContainer"}>
         <ProjectTile
           title={"Project-Alpha"}
-          url={"https://github.com/theGreatKyle1994/project-alpha/tree/dev"}
           imgUrl={projectAlphaPic}
           gifUrl={projectAlphaGif}
+          gitHubUrl={
+            "https://github.com/theGreatKyle1994/project-alpha/tree/dev"
+          }
+          liveUrl={""}
         />
         <ProjectTile
           title={"Color Master"}
-          url={"http://3.133.98.214/home"}
           imgUrl={colorMasterPic}
           gifUrl={colorMasterGif}
+          gitHubUrl={"https://github.com/theGreatKyle1994/color-master"}
+          liveUrl={"http://3.133.98.214/home"}
         />
         <ProjectTile
           title={"Cryptonia"}
-          url={"http://3.22.187.148/home"}
           imgUrl={cryptoniaPic}
           gifUrl={cryptoniaGif}
+          gitHubUrl={"https://github.com/theGreatKyle1994/cryptonia"}
+          liveUrl={"http://3.22.187.148/home"}
         />
         <ProjectTile
           title={"@Recipes"}
-          url={"https://thegreatkyle1994.github.io/react-recipe-app/"}
           imgUrl={atRecipesPic}
           gifUrl={atRecipesGif}
+          gitHubUrl={"https://github.com/theGreatKyle1994/react-recipe-app"}
+          liveUrl={"https://thegreatkyle1994.github.io/react-recipe-app/"}
         />
         <ProjectTile
           title={"Color Scheme App"}
-          url={"https://thegreatkyle1994.github.io/color-scheme-generator/"}
           imgUrl={colorGeneratorPic}
           gifUrl={colorGeneratorGif}
+          gitHubUrl={
+            "https://github.com/theGreatKyle1994/color-scheme-generator"
+          }
+          liveUrl={"https://thegreatkyle1994.github.io/color-scheme-generator/"}
         />
         <ProjectTile
           title={"Dad Joke Generator"}
-          url={"https://thegreatkyle1994.github.io/dad-joke-generator/"}
           imgUrl={dadJokeGenPic}
           gifUrl={dadJokeGenGif}
+          gitHubUrl={"https://github.com/theGreatKyle1994/dad-joke-generator"}
+          liveUrl={"https://thegreatkyle1994.github.io/dad-joke-generator/"}
         />
       </div>
     </Card>

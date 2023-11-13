@@ -8,10 +8,29 @@
   list-style: none;
 }
 
+.tile-info-overlay {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+.tile-info-link {
+  transition-duration: 250ms;
+}
+
+.tile-info-link:link,
+.tile-info-link:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.tile-info-link:hover {
+  color: rgb(150, 150, 150);
+}
+
 .tileTitle {
   font-size: 2em;
   border-bottom: 2px solid #588157;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 0 0;
 }
 
 .tileTitleTags {

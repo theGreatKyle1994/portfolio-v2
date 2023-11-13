@@ -1,22 +1,35 @@
 import "./ProjectTile.css";
 
-const ProjectTile = (props) => {
+const ProjectTile = ({ title, imgUrl, gifUrl, gitHubUrl, liveUrl }) => {
   return (
     <li className={"tileContainer"}>
       <h2 className={"tileTitle"}>
         <span className={"tileTitleTags"}>{`< `}</span>
-        {props.title}
+        {title}
         <span className={"tileTitleTags"}>{` />`}</span>
       </h2>
-      <a target={"_blank"} rel={"noreferrer"} href={props.url}>
+      <div className="tile-info-overlay">
+        <a className="tile-info-link" href={gitHubUrl} target="_blank">
+          GitHub
+        </a>
+        {liveUrl && (
+          <>
+            |
+            <a className="tile-info-link" href={liveUrl} target="_blank">
+              Live
+            </a>
+          </>
+        )}
+      </div>
+      <a href={liveUrl ? liveUrl : gitHubUrl} target="_blank">
         <div
           className={"tileImage"}
-          style={{ backgroundImage: `url(${props.imgUrl})` }}
-          onMouseOver={(e) => {
-            e.target.style.backgroundImage = `url(${props.gifUrl})`;
-          }}
+          style={{ backgroundImage: `url(${imgUrl})` }}
+          onMouseOver={(e) =>
+            (e.target.style.backgroundImage = `url(${gifUrl})`)
+          }
           onMouseOut={(e) =>
-            (e.target.style.backgroundImage = `url(${props.imgUrl})`)
+            (e.target.style.backgroundImage = `url(${imgUrl})`)
           }
         />
       </a>
