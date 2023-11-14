@@ -39,7 +39,7 @@ const Card = ({ title, children }) => {
   }, [thisCard.current]);
 
   return (
-    <section className={"cardContainer"} ref={thisCard}>
+    <section id={title} className={"cardContainer"} ref={thisCard}>
       <h2 className={"cardTitle"}>
         <span className={"cardTitleBracket"}>{"{"}</span>
         {titleTypewriter.title}

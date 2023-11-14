@@ -1,5 +1,6 @@
 import "./App.css";
 import svgIcons from "./components/ui/SvgIcons";
+import PullOutMenu from "./components/ui/PullOutMenu";
 import Header from "./components/home/Header";
 import Summary from "./components/home/Summary";
 import AboutMe from "./components/home/AboutMe";
@@ -11,16 +12,19 @@ import Footer from "./components/home/Footer";
 
 const App = () => {
   return (
-    <main className={"mainBody"}>
-      <Header />
-      <Summary />
-      <AboutMe />
-      <Work />
-      <HardSkills icons={svgIcons} />
-      <SoftSkills />
-      <Projects />
-      <Footer icons={svgIcons} />
-    </main>
+    <>
+      <PullOutMenu />
+      <main className={"mainBody"}>
+        <Header />
+        <Summary />
+        <AboutMe />
+        <Work />
+        <HardSkills icons={svgIcons} />
+        <SoftSkills />
+        <Projects />
+        <Footer icons={svgIcons} />
+      </main>
+    </>
   );
 };
 

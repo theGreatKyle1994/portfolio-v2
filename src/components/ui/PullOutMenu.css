@@ -1,0 +1,37 @@
+#side-menu-container {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 150px;
+  padding-left: 10px;
+  background-color: #2929294b;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom-left-radius: 10px;
+  animation-name: pull-menu-in;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.side-menu-link {
+  font-size: 1.5em;
+  list-style: decimal-leading-zero;
+}
+
+.side-menu-link a:link,
+.side-menu-link a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes pull-menu-in {
+  from {
+    right: -2000px;
+  }
+  to {
+    right: 0;
+  }
+}
