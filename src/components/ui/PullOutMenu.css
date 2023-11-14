@@ -5,7 +5,6 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 150px;
   padding-left: 10px;
   background-color: #2929294b;
   border-left: 1px solid black;
@@ -18,7 +17,12 @@
 
 .side-menu-link {
   font-size: 1.5em;
+  margin-right: 10px;
   list-style: decimal-leading-zero;
+}
+
+.side-menu-link a {
+  transition-duration: 100ms;
 }
 
 .side-menu-link a:link,
@@ -27,11 +31,26 @@
   text-decoration: none;
 }
 
+.side-menu-link a:hover {
+  color: lightgray;
+}
+
 @keyframes pull-menu-in {
   from {
     right: -2000px;
   }
   to {
     right: 0;
+  }
+}
+
+@media (max-width: 1500px) {
+  #side-menu-container {
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center; */
+    display: none;
   }
 }

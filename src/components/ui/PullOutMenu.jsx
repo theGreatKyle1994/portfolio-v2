@@ -2,7 +2,8 @@ import "./PullOutMenu.css";
 
 const PullOutMenu = () => {
   return (
-    <ul id="side-menu-container">
+    <ul id={"side-menu-container"}>
+      <p className="side-menu-link">Quick Links</p>
       <li className="side-menu-link">
         <a href="#Summary">Summary</a>
       </li>
