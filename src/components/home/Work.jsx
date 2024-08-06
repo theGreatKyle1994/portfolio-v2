@@ -6,8 +6,23 @@ const Work = () => {
     <Card title={"Experience"}>
       <WorkTile
         title={"Project Lead"}
-        subTitle={"Open-Source"}
-        date={"2023-Present"}
+        subTitle={"Develop.This()"}
+        date={"2024-Present"}
+        summary={`Successfully managed and delivered high-quality, 
+        scalable web solutions. In this role, I oversaw all 
+        phases of the project lifecycle, from initial requirement gathering and 
+        planning to execution, testing, and deployment. I led cross-functional 
+        teams, coordinated with stakeholders, and ensured projects were completed 
+        on time and within budget. My technical proficiency included a strong 
+        understanding of web technologies, frameworks, and best practices, 
+        coupled with excellent problem-solving and communication skills. 
+        I was dedicated to driving innovation, improving processes, and delivering 
+        exceptional user experiences.`}
+      />
+      <WorkTile
+        title={"Frontend Department Lead"}
+        subTitle={"Techbyte Learning"}
+        date={"2024"}
         summary={`Responsible for coordinating complex project assignments for a growing
         group of developers, utilizing Agile methodologies to ensure project
         continuation and quality assurance, delegating tasks according to each
@@ -20,7 +35,7 @@ const Work = () => {
       <WorkTile
         title={"Full-Stack Engineer"}
         subTitle={"Freelance"}
-        date={"2019-2023"}
+        date={"2020-2024"}
         summary={`Responsible for working alongside contracting client in maintaining and
         updating existing project code to comply with the client's specific
         needs, writing new JavaScript code to assist in implementing new product
