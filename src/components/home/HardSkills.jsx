@@ -30,7 +30,9 @@ const HardSkills = ({ icons }) => {
         <HardSkillTile title={"Node.js"} icon={icons.tagNode} />
         <HardSkillTile title={"Express.js"} icon={icons.tagExpress} />
         <HardSkillTile title={"React.js"} icon={icons.tagReact} />
+        <HardSkillTile title={"Next.js"} icon={icons.tagNextJS} />
         <HardSkillTile title={"Flask"} icon={icons.tagFlask} />
+        <HardSkillTile title={"FastAPI"} icon={icons.tagFastAPI} />
       </ul>
       <h2 className={"tileTitle"}>
         <span className={"tileTitleTags"}>{`< `}</span>
@@ -40,6 +42,7 @@ const HardSkills = ({ icons }) => {
       <ul className={"skillContainer"}>
         <HardSkillTile title={"SQL"} icon={icons.tagSQL} />
         <HardSkillTile title={"MySQL"} icon={icons.tagMySQL} />
+        <HardSkillTile title={"PostgreSQL"} icon={icons.tagPostgreSQL} />
         <HardSkillTile title={"MongoDB"} icon={icons.tagMongoDB} />
       </ul>
       <h2 className={"tileTitle"}>
