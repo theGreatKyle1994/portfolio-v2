@@ -5,9 +5,22 @@ const Work = () => {
   return (
     <Card title={"Experience"}>
       <WorkTile
+        title={"Software Department Leader"}
+        subTitle={"Techbyte Learning"}
+        date={"2024-Present"}
+        summary={`Responsible for coordinating complex project assignments for a growing
+        group of developers, utilizing Agile methodologies to ensure project
+        continuation and quality assurance, delegating tasks according to each
+        contributor's unique strengths and skill sets, independently
+        contributing Git commits weekly to facilitate back-end and front-end
+        requirements, collaborating with contributors in one-on-one
+        and group code reviews for mentoring, and publishing thorough
+        documentation for ease of reference.`}
+      />
+      <WorkTile
         title={"Project Lead"}
         subTitle={"Develop.This()"}
-        date={"2024-Present"}
+        date={"2024"}
         summary={`Successfully managed and delivered high-quality, 
         scalable web solutions. In this role, I oversaw all 
         phases of the project lifecycle, from initial requirement gathering and 
@@ -18,19 +31,6 @@ const Work = () => {
         coupled with excellent problem-solving and communication skills. 
         I was dedicated to driving innovation, improving processes, and delivering 
         exceptional user experiences.`}
-      />
-      <WorkTile
-        title={"Frontend Department Lead"}
-        subTitle={"Techbyte Learning"}
-        date={"2024"}
-        summary={`Responsible for coordinating complex project assignments for a growing
-        group of developers, utilizing Agile methodologies to ensure project
-        continuation and quality assurance, delegating tasks according to each
-        contributor's unique strengths and skill sets, independently
-        contributing Git commits weekly to facilitate back-end and front-end
-        requirements, collaborating with contributors in one-on-one
-        and group code reviews for mentoring, and publishing thorough
-        documentation for ease of reference.`}
       />
       <WorkTile
         title={"Full-Stack Engineer"}

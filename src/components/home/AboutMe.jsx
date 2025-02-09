@@ -7,9 +7,7 @@ const AboutMe = () => {
     <Card title={"About Me"}>
       <section className={"aboutMeContainer"}>
         <p className={"aboutMe"}>
-          As a Full-Stack Engineer with experience encompassing 5+ years in
-          software development and over 10 years of client services, I approach
-          projects with the goal of utilizing and adapting innovative
+          I approach projects with the goal of utilizing and adapting innovative
           technologies to perform efficient and aesthetically pleasing functions
           consistent with my clients' vision. I view each project as an
           opportunity to not only improve my skill set by challenging myself to

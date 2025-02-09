@@ -32,7 +32,7 @@ const Projects = () => {
           imgUrl={colorMasterPic}
           gifUrl={colorMasterGif}
           gitHubUrl={"https://github.com/theGreatKyle1994/color-master"}
-          liveUrl={"http://color-master-frontend.s3-website-us-east-1.amazonaws.com"}
+          liveUrl={"http://44.200.176.150/"}
         />
         <ProjectTile
           title={"Cryptonia"}
