@@ -1,8 +1,6 @@
 import "./Projects.css";
 import Card from "../ui/Card";
 import ProjectTile from "./ProjectTile";
-import projectAlphaPic from "../../assets/images/projectAlpha.jpg";
-import projectAlphaGif from "../../assets/images/projectAlphaGif.gif";
 import colorMasterPic from "../../assets/images/colorMaster.jpg";
 import colorMasterGif from "../../assets/images/colorMasterGif.gif";
 import cryptoniaPic from "../../assets/images/cryptonia.jpg";
@@ -19,15 +17,6 @@ const Projects = () => {
     <Card title={"Projects"} noBorder>
       <div className={"projectContainer"}>
         <ProjectTile
-          title={"Project-Alpha"}
-          imgUrl={projectAlphaPic}
-          gifUrl={projectAlphaGif}
-          gitHubUrl={
-            "https://github.com/theGreatKyle1994/project-alpha/tree/dev"
-          }
-          liveUrl={""}
-        />
-        <ProjectTile
           title={"Color Master"}
           imgUrl={colorMasterPic}
           gifUrl={colorMasterGif}
@@ -39,7 +28,7 @@ const Projects = () => {
           imgUrl={cryptoniaPic}
           gifUrl={cryptoniaGif}
           gitHubUrl={"https://github.com/theGreatKyle1994/cryptonia"}
-          liveUrl={"http://3.22.187.148/home"}
+          liveUrl={"http://3.238.85.178/"}
         />
         <ProjectTile
           title={"@Recipes"}
